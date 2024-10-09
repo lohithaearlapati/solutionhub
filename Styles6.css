@@ -1,0 +1,165 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(45, 136, 164);
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-options {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-options a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; /* Adjusted spacing between navbar links */
+    font-size: 18px;
+}
+
+/* Topic heading styles */
+.topic-heading {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Styles for answers container and card */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between content and buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
+}
+
+.card-content {
+    flex: 1; /* Ensures content area expands */
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right; /* Aligns username to the right */
+}
+
+.answer {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Styles for card buttons */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upvote-button,
+.share-button {
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upvote-button:hover,
+.share-button:hover {
+    background-color: #f0f0f0;
+}
+
+.upvote-icon {
+    color: #007bff; /* Change to a color suitable for your design */
+    transition: color 0.3s ease;
+}
+
+.upvote-button.upvoted .upvote-icon {
+    color: #0056b3; /* Change to a color suitable for your design when upvoted */
+}
+
+.upvote-icon:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Styles for the question form */
+.question-form {
+    padding: 20px;
+    text-align: center; /* Center-aligns the form */
+}
+
+.question-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
+    width: 1500px;
+}
+
+.question-card h2 {
+    margin-top: 0;
+}
+
+.question-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question-card input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.question-card input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(45, 136, 164);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.question-card input[type="submit"]:hover {
+    background-color: #357a8a; /* Darker shade on hover */
+}
+
+.question-card p {
+    color: green;
+    font-weight: bold;
+}
